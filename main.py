@@ -1,5 +1,5 @@
+# Семинар 1. Ввод-вывод, операторы ветвления.
 # Задача №1. Решение в группах
-# Семинар 1. Ввод-вывод, операторы ветвления
 # За день машина проезжает n километров. Сколько
 # дней нужно, чтобы проехать маршрут длиной m
 # километров? При решении этой задачи нельзя
@@ -60,9 +60,30 @@
 # Input: 2016
 # Output: YES
 
-n = int(input("Введите god: "))
-if n % 4 == 0 and n % 100 != 0 or n % 400 == 0:
-    print('YES')
-else: 
-    print('NO')
+# n = int(input("Введите god: "))
+# if n % 4 == 0 and n % 100 != 0 or n % 400 == 0:
+#     print('YES')
+# else: 
+#     print('NO')
 
+# def find_farthest_orbit(orbits):
+#     list_of_elliptical_orbits = [i for i in orbits if i[0] != i[1]]
+#     # print(list_of_elliptical_orbits)
+#     list_of_areas = [i[0] * i[1] for i in list_of_elliptical_orbits]
+#     # print(list_of_areas)
+#     # max_area_index = list_of_areas.index(max(list_of_areas))
+#     # print(max_area_index)
+#     return list_of_elliptical_orbits[max_area_index[0]]
+
+# orbits = [(1, 3), (2.5, 10), (7, 2), (6, 6), (4, 3)]
+# print(*find_farthest_orbit(orbits))
+
+def same_by(characteristic, objects):
+    return sum(list(map(characteristic, objects))) == 0
+
+values = [0, 2, 10, 6]
+print(same_by(lambda x: x% 2, values))
+if same_by(lambda x: x% 2, values):
+    print('same')
+else:
+    print('dif')
