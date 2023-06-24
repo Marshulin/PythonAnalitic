@@ -78,12 +78,14 @@
 # orbits = [(1, 3), (2.5, 10), (7, 2), (6, 6), (4, 3)]
 # print(*find_farthest_orbit(orbits))
 
-def same_by(characteristic, objects):
-    return sum(list(map(characteristic, objects))) == 0
+# def same_by(characteristic, objects):
+#     return sum(list(map(characteristic, objects))) == 0
 
-values = [0, 2, 10, 6]
-print(same_by(lambda x: x% 2, values))
-if same_by(lambda x: x% 2, values):
-    print('same')
-else:
-    print('dif')
+# values = [0, 2, 10, 6]
+# print(same_by(lambda x: x% 2, values))
+# if same_by(lambda x: x% 2, values):
+#     print('same')
+# else:
+#     print('dif')
+
+
